@@ -7,10 +7,45 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes|Sedgwick+Ave" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
+
 </head>
 <body>
 
+
+    <div class="pos-f-t">
+        <div class="collapse" id="navbarToggleExternalContent">
+          <div class="bg-dark p-4">
+            <h4 class="text-white">Here's how you play the game</h4>
+            <span class="text-muted">
+                <div class="instructions">
+                    <ol>
+                        <li>You will be given a random number at the start of the game.<span>"Number To Get"</span></li>
+                        <li>There are four crystals below.</li>
+                        <li>Green, Blue, Red, and Yellow</li>
+                        <li>By clicking on a crystal, you will add a specific amount of points to your total score.</li>
+                        <li>You win the game by matching your total score to the random number.</li>
+                        <li>You lose the game if your total score goes above the random number.</li>
+                        <li>The value of each crystal is hidden from you until you click on it.</li>
+                        <li>Each time when the game starts, the game will change the values of each crystal.</li>
+                    </ol>
+                </div>
+            </span>
+          </div>
+        </div>
+        <nav class="navbar navbar-dark bg-dark">
+            
+                <audio controls src="assets/images/Music.mp3"></audio>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span>Instructions</span>
+          </button>
+        </nav>
+      </div>
+
+      
     <div class="header">
         <h1>Crystal Collector</h1>
     </div>
@@ -29,48 +64,29 @@
         </h2>
     </div>
     <div class="gems">
-        <img src="assets/images/greenz.png" alt="gem" id="First Gem">
-        <img src="assets/images/bluez.png" alt="gem" id="Second Gem">
-        <img src="assets/images/redz.png" alt="gem" id="Third Gem">
-        <img src="assets/images/goldz.png" alt="gem" id="Fourth Gem">
+        <img src="assets/images/greenz.png" auido="gem" id="First">
+        <img src="assets/images/bluez.png" alt="gem" id="Second">
+        <img src="assets/images/redz.png" alt="gem" id="Third">
+        <img src="assets/images/goldz.png" alt="gem" id="Fourth">
     </div>
     <div class="totalScore">
         <h2>Total Score:
             <span id="finalScore"></span>
         </h2>
     </div>
+    <div class="navi">
+            <img src="assets/images/hourse.gif" alt="navi" height="70px" width="200px">
 
-
-
-	<!-- <div class="header">
-		<h1>Crystal Collector</h1>
-	</div>
-	
-	<div class="numberToMatch">
-		<h2>Number To Get:
-			<span id= "randomNumber"></span>
-	    </h2>
-	</div>
-	<div class="winsAndLosses">
-		<h2>Wins:
-			<span id= "numberWins"></span>
-			<br>
-			Losses: 
-			<span id= "numberLosses"></span>
-		</h2>
-	</div>
-	<div class="gems">
-		<img src="assets/images/blue.png" class=gemImage id="one" alt="Blue Gem">
-		<img src="assets/images/green.png" class=gemImage id="two" alt="Green Gem">
-		<img src="assets/images/red.png" class=gemImage id= "three" alt="Red Gem">
-		<img src="assets/images/yellow.png" class=gemImage id= "four" alt="Yellow Gem">
-	</div>
-	<div class="userTotal">
-		<h2>Your total score is:
-			<span id="finalTotal"></span>
-		</h2>
-	</div> -->
+    </div>
 </body>
+<script type="text/javascript" src="https://code.jquery.com/jquery-2.2.0.js"></script>
+<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>
 
 

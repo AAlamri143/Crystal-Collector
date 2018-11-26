@@ -1,12 +1,34 @@
+* {
+	box-sizing: border-box;
+	text-decoration: none;
+}
 
 body {
     position: fixed;
-    width: 1200px;
+    width: 100%;
     background-image: url("../images/zelda3.jpg");
-    background-repeat:no-repeat;
-    background-size: 117% 737px;
+    background-repeat: repeat;
+    background-size: 100% 780px;
     padding: 0;
     margin: 0;
+}
+audio {
+    position: fixed;
+    padding-bottom: .2px;
+    background-attachment: fixed;
+}
+.pos-f-t {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.591);
+    /* padding-bottom: 2px; */
+    width: 117%;
+    background: rgba(255, 255, 255, 0.591);
+    font-family: 'Fredericka the Great', cursive;
+
+}
+
+.navbar-toggler span {
+    font-family: 'Great Vibes', cursive;
+
 }
 
 .header {
@@ -23,51 +45,55 @@ body {
 
 }
 .header h1 {
+    text-align: center;
     color: white;
     font-weight: bold;
-    margin-left: 10px;
+    margin-left: 0px;
     font-family: 'Fredericka the Great', cursive;
     font-size: 70px;
 }
 
 .randomToMatch {
-    width: 300px;
+    width: 450px;
     position: absolute;
     float: left;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
     padding-bottom: 35px;
     padding-top: 20px;
-    padding-right: 145px;
+    padding-right: 185px;
     margin-top: 10px;
     margin-bottom: 10px;
-    margin-right: 70%;
+    margin-right: 90%;
     margin-left: 20px;
 }
 .randomToMatch h2 {
+    font-family: 'Fredericka the Great', cursive;
     color: white;
     font-weight: bold;
     font-size: 30px;
-    width: 250px;
-    margin-left: 10px;
+    width: 300px;
+    margin-left: 20px;
     margin-top: 10px;
 }
 
 .winsAndLosses {
-    width: 100px;
+    width: 172px;
     float: left;
     position: relative;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
-    padding: 25px 2px 30px 70px;
+    padding: 25px 2px 23px 70px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 498px;
 }
 .winsAndLosses h2 {
+    font-family: 'Fredericka the Great', cursive;
     color: white;
-    margin-left: -65px;
+    margin-left: -55px;
     width: 150px;
+    margin-top: 5px;
     margin-right: 90px;
     padding-left: 3px;
     font-weight: bold;
@@ -80,17 +106,37 @@ body {
     float: left;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
-    padding-bottom: 10px;
+    padding-bottom: 90px;
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 670px;
     margin-left: 20px;
+    
 }
+
 .gems img {
-    width: 70px;
-    length: 50px;
+    position: absolute;
+    width: 40px;
+    margin-top: 5px;
     margin-left: 70px;
+}
+#First {
+    margin-left: 90px;
+}
+#Second {
+    margin-left: 220px;
+}
+#Third {
+    margin-left: 350px;
+}
+#Fourth {
+    margin-left: 480px;
+}
+.gems img:hover {
+    margin-top: -8px;;
+    /* opacity: 0.7; */
+    width: 60px;
 }
 
 .totalScore {
@@ -107,61 +153,101 @@ body {
     margin-left: 20px;
 }
 .totalScore h2 {
+    font-family: 'Fredericka the Great', cursive;
     font-weight: bold;
     font-size: 30px;
     width: 250px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-top: 10px;
     color: white;
 }
-/* General Elements */
-/* body{
-	background-image: url("../images/background.png")
-} */
-/* div{
-	background-color: white;
-	margin: 10px;
-	width: 25%
+
+.navi {
+    position: absolute;
+    float: left;
+    margin-left: 200px;
+    margin-top: -265px;
 }
-div{
-	border: solid 2px antiquewhite;
-	padding: 10px;
-} */
-/* h1, span{
-	font-weight: bold;
-	text-align: center;
+
+@media screen and (min-width: 680px) and (max-width: 1400px){
+    body {
+        margin-right: 0;
+        width: 100%;
+    }
+    .navbar-toggler {
+        margin-left: 72%;
+    }
 }
-h1{
-	font-size: 30pt;
+@media screen and (min-width: 0px) and (max-width: 680px){
+    
+    .navbar-toggler {
+        margin-left: 65%;
+    }
+
+    .header {
+        width: 93%;
+        padding: 15px;
+    }
+    .header h1{
+        font-size: 40px;
+    }
+
+    .randomToMatch {
+        width: 93%;
+        /* padding: 10px; */
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+    }
+    .randomToMatch h2 {
+        margin-left: 30%;
+    }
+
+    .winsAndLosses {
+        width: 93%;
+        /* padding: 15px 2px 0px 70px; */
+        padding-top: 15px;
+        padding-bottom: 8px;
+        padding-left: 48%;
+        margin-top: 118px;
+        margin-bottom: 0px;
+        margin-left: 19px; 
+       }
+
+    .gems {
+        width: 93%;
+        margin-top: 20px;
+        
+    }
+    #First {
+        margin-left: 13%;
+    }
+    #Second {
+        margin-left: 31%;
+    }
+    #Third {
+        margin-left: 50%;
+    }
+    #Fourth {
+        margin-left: 70%;
+    }
+
+    .totalScore {
+        width: 93%;
+    }
+
+    .instructions {
+        width: 86%;
+        font-size: 17px;
+    }
+
+    .navi {
+        /* display: none; */
+            position: absolute;
+            float: left;
+            margin-top: -190px;
+        }
+    
+
+
 }
-ol{
-	list-style: decimal inside; 
-} */
-/* ul {
-	list-style: disc inside;
-	text-indent: 20px;
-}
-/* Specfic Elements*/
-/* div.header, div.gems{
-	background-color: #e0e0eb;
-}
-div.header{
-	width: 50%;
-} */
-/* Classes */
-/* .numberToMatch, .winsAndLosses{
-	float: left;
-	width: 15%;
-	height: 60px;
-}
-.userTotal{
-	width: 15%;
-	height: 60px;
-}
-.gems{
-	clear: both;
-} */
-/* .gemImage{
-	height: 60px;
-	margin: 10px;
-} */
