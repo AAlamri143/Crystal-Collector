@@ -1,8 +1,6 @@
-
-
 $(document).ready(function(){
 
-  var Random=Math.floor(Math.random()*200+60)
+    var Random=Math.floor(Math.random()*200+60)
     $("#randomNumber").text(Random);
     var num1= Math.floor(Math.random()*15+1)
     var num2= Math.floor(Math.random()*15+1)
@@ -49,11 +47,15 @@ $(document).ready(function(){
 
         if (totalScoreNumber == Random){
           yay();
+          SoundWin = new Audio('assets/images/win1.mp3'); 
+          SoundWin.play();
         }
         else if (totalScoreNumber > Random){
           loser();
+          SoundLose = new Audio('assets/images/lose1.mp3'); 
+          SoundLose.play();
         }  
-        Sound = new Audio('../images/rupee.mp3'); 
+        Sound = new Audio('assets/images/rubee1.mp3'); 
         Sound.play();
 
     })
@@ -63,10 +65,16 @@ $(document).ready(function(){
         $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
           yay();
+          SoundWin = new Audio('assets/images/win1.mp3'); 
+          SoundWin.play();
         }
         else if (totalScoreNumber > Random){
           loser();
+          SoundLose = new Audio('assets/images/lose1.mp3'); 
+          SoundLose.play();
         }   
+        Sound = new Audio('assets/images/rubee1.mp3'); 
+        Sound.play();
     })
     $("#Third").on("click", function(){
         totalScoreNumber = totalScoreNumber + num3;
@@ -74,10 +82,16 @@ $(document).ready(function(){
         $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
             yay();
+            SoundWin = new Audio('assets/images/win1.mp3'); 
+            SoundWin.play();
         }
         else if (totalScoreNumber > Random){
             loser();
+            SoundLose = new Audio('assets/images/lose1.mp3'); 
+            SoundLose.play();
         }   
+        Sound = new Audio('assets/images/rubee1.mp3'); 
+        Sound.play();
     })
       $("#Fourth").on("click", function(){
         totalScoreNumber = totalScoreNumber + num4;
@@ -85,9 +99,15 @@ $(document).ready(function(){
       $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
             yay();
+            SoundWin = new Audio('assets/images/win1.mp3'); 
+            SoundWin.play();
         }
         else if (totalScoreNumber > Random){
             loser();
+            SoundLose = new Audio('assets/images/lose1.mp3'); 
+            SoundLose.play();
         }   
+        Sound = new Audio('assets/images/rubee1.mp3'); 
+        Sound.play();
       })
 })

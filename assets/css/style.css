@@ -14,14 +14,15 @@ body {
 }
 audio {
     position: fixed;
-    padding-bottom: .2px;
+    padding-bottom: -80px;
     background-attachment: fixed;
+    margin-left: 15px;
 }
 .pos-f-t {
     border-bottom: 2px solid rgba(255, 255, 255, 0.591);
     /* padding-bottom: 2px; */
     width: 117%;
-    background: rgba(255, 255, 255, 0.591);
+    background: rgba(0, 0, 0, 0.804);
     font-family: 'Fredericka the Great', cursive;
 
 }
@@ -162,11 +163,19 @@ audio {
     color: white;
 }
 
-.navi {
+.navi1 {
+    opacity: .6;
     position: absolute;
     float: left;
-    margin-left: 200px;
+    margin-left: 80px;
     margin-top: -265px;
+}
+.navi2 {
+    opacity: 0.2; 
+    position: absolute;
+    float: left;
+    margin-left: 130px;
+    margin-top: -250px;
 }
 
 @media screen and (min-width: 680px) and (max-width: 1400px){
@@ -241,13 +250,20 @@ audio {
         font-size: 17px;
     }
 
-    .navi {
+
+
+    .navi1 {
         /* display: none; */
             position: absolute;
             float: left;
             margin-top: -190px;
         }
     
+        .navi2 {
+            width: 50%;
+            margin-top: -173px;
+        }
+        
 
 
 }
