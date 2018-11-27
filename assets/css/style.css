@@ -1,34 +1,57 @@
-* {
+/* * {
 	box-sizing: border-box;
 	text-decoration: none;
-}
+} */
 
+/* Body */
 body {
-    position: fixed;
+    /* box-sizing: border-box;
+	text-decoration: none; */
+    /* position: fixed; */
     width: 100%;
     background-image: url("../images/zelda3.jpg");
+    background-size: 100% 100%;
     background-repeat: repeat;
-    background-size: 100% 780px;
     padding: 0;
     margin: 0;
 }
 audio {
     position: fixed;
-    padding-bottom: -80px;
+    margin-top: 120px;
+    padding-top: -70px;
     background-attachment: fixed;
-    margin-left: 15px;
 }
+
+
+
+/* Top */
 .pos-f-t {
-    border-bottom: 2px solid rgba(255, 255, 255, 0.591);
-    /* padding-bottom: 2px; */
-    width: 117%;
-    background: rgba(0, 0, 0, 0.804);
+    position: fixed;
+    border-bottom: 6px solid rgba(255, 255, 255, 0.756);
+    /* padding-bottom: 20px; */
+    width: 100%;
+    margin-top: -90px;
+    padding-bottom: 0px;
+    background: rgb(43, 43, 43);
     font-family: 'Fredericka the Great', cursive;
 
 }
 
 .navbar-toggler span {
-    font-family: 'Great Vibes', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    margin-top: -0px;
+
+}
+
+
+.navbar img {
+    position: absolute;
+    opacity: .6;
+    margin-left: -100px;
+    margin-right: 390px;
+    margin-top: -25px;
+    margin-bottom: -40px;
+    padding-bottom: 10px;
 
 }
 
@@ -38,7 +61,7 @@ audio {
     border: 5px solid rgba(255, 255, 255, 0.591);
     padding-bottom: 40px;
     padding-top: 30px;
-    margin-top: 20px;
+    margin-top: 90px;
     margin-bottom: 10px;
     margin-right: 670px;
     margin-left: 20px;
@@ -56,7 +79,6 @@ audio {
 
 .randomToMatch {
     width: 450px;
-    position: absolute;
     float: left;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
@@ -81,11 +103,10 @@ audio {
 .winsAndLosses {
     width: 172px;
     float: left;
-    position: relative;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
     padding: 25px 2px 23px 70px;
-    margin-top: 10px;
+    margin-top: -129px;
     margin-bottom: 10px;
     margin-left: 498px;
 }
@@ -107,7 +128,7 @@ audio {
     float: left;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
-    padding-bottom: 90px;
+    padding-bottom: 20px;
     padding-top: 10px;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -117,7 +138,6 @@ audio {
 }
 
 .gems img {
-    position: absolute;
     width: 40px;
     margin-top: 5px;
     margin-left: 70px;
@@ -126,22 +146,51 @@ audio {
     margin-left: 90px;
 }
 #Second {
-    margin-left: 220px;
+    margin-left: 90px;
 }
 #Third {
-    margin-left: 350px;
+    margin-left: 90px;
 }
 #Fourth {
-    margin-left: 480px;
-}
-.gems img:hover {
-    margin-top: -8px;;
-    /* opacity: 0.7; */
-    width: 60px;
+    margin-left: 80px;
 }
 
+/* #First:hover {
+    margin-left: 90px;
+
+    margin-top: -8px;
+    width: 60px;
+    position: fixed;
+}
+#Second:hover {
+    margin-left: 90px;
+
+    margin-top: -8px;
+    width: 60px;
+    position: fixed;
+}
+#Third:hover {
+    margin-left: 90px;
+
+    margin-top: -8px;
+    width: 60px;
+    position: fixed;
+}
+#Fourth:hover {
+    margin-left: 90px;
+
+    margin-top: -8px;
+    width: 60px;
+    position: fixed;
+} */
+/* .gems img:hover {
+    margin-top: -8px;
+    /* opacity: 0.7;
+    width: 60px;
+    position: fixed;
+} */
+
 .totalScore {
-    position: relative;
     float: left;
     background: rgba(1, 0, 1, 0.445);
     border: 5px solid rgba(255, 255, 255, 0.591);
@@ -164,19 +213,27 @@ audio {
 }
 
 .navi1 {
+    position: fixed;
     opacity: .6;
-    position: absolute;
     float: left;
     margin-left: 80px;
-    margin-top: -265px;
+    margin-top: -270px;
 }
-.navi2 {
-    opacity: 0.2; 
+/* .navi2 {
     position: absolute;
+    opacity: 0.2; 
     float: left;
     margin-left: 130px;
-    margin-top: -250px;
-}
+    margin-top: -257px;
+} */
+
+/* .navi4 {
+    position: relative;
+    float: left;
+    opacity: .3;
+    margin-left: 170px;
+    margin-top: -20px;
+} */
 
 @media screen and (min-width: 680px) and (max-width: 1400px){
     body {
@@ -187,7 +244,7 @@ audio {
         margin-left: 72%;
     }
 }
-@media screen and (min-width: 0px) and (max-width: 680px){
+@media screen and (min-width: 430px) and (max-width: 680px){
     
     .navbar-toggler {
         margin-left: 65%;
@@ -218,38 +275,49 @@ audio {
         padding-top: 15px;
         padding-bottom: 8px;
         padding-left: 48%;
-        margin-top: 118px;
+        margin-top: 10px;
         margin-bottom: 0px;
         margin-left: 19px; 
        }
 
     .gems {
         width: 93%;
-        margin-top: 20px;
-        
+        margin-top: 230px;
+        padding-bottom: 85px;
+        position: absolute;
     }
     #First {
         margin-left: 13%;
+        position: absolute;
     }
     #Second {
         margin-left: 31%;
+        position: absolute;
     }
     #Third {
         margin-left: 50%;
+        position: absolute;
     }
     #Fourth {
         margin-left: 70%;
+        position: absolute;
+
     }
 
     .totalScore {
         width: 93%;
+        margin-top: 150px;
+
+
     }
 
     .instructions {
         width: 86%;
-        font-size: 17px;
+        font-size: 14px;
     }
-
+    .instructions li {
+        width: 115%;
+    }
 
 
     .navi1 {
