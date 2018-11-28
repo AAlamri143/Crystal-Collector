@@ -28,9 +28,11 @@ $(document).ready(function(){
          
     function yay(){
         
-        alert("You Win")
+        // alert("You Win")
         winsNumber++; 
         $('#numberWins').text(winsNumber);
+        SoundWin = new Audio('assets/images/win1.mp3'); 
+        SoundWin.play();
         reset();
     }
 
@@ -38,6 +40,8 @@ $(document).ready(function(){
         alert ("You lose!");
         lossesNumber++;
         $('#numberLosses').text(lossesNumber);
+        SoundLose = new Audio('assets/images/lose1.mp3'); 
+        SoundLose.play();
         reset()
     }
 
@@ -48,18 +52,12 @@ $(document).ready(function(){
 
         if (totalScoreNumber == Random){
           yay();
-        //   $('#numberWins').text('You Win!')
-          SoundWin = new Audio('assets/images/win1.mp3'); 
-          SoundWin.play();
         }
         else if (totalScoreNumber > Random){
           loser();
-          SoundLose = new Audio('assets/images/lose1.mp3'); 
-          SoundLose.play();
         }  
         Sound = new Audio('assets/images/rubee1.mp3'); 
         Sound.play();
-
     })
     $("#Second").on("click", function(){
         totalScoreNumber = totalScoreNumber + num2;
@@ -67,13 +65,9 @@ $(document).ready(function(){
         $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
           yay();
-          SoundWin = new Audio('assets/images/win1.mp3'); 
-          SoundWin.play();
         }
         else if (totalScoreNumber > Random){
           loser();
-          SoundLose = new Audio('assets/images/lose1.mp3'); 
-          SoundLose.play();
         }   
         Sound = new Audio('assets/images/rubee1.mp3'); 
         Sound.play();
@@ -84,13 +78,9 @@ $(document).ready(function(){
         $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
             yay();
-            SoundWin = new Audio('assets/images/win1.mp3'); 
-            SoundWin.play();
         }
         else if (totalScoreNumber > Random){
             loser();
-            SoundLose = new Audio('assets/images/lose1.mp3'); 
-            SoundLose.play();
         }   
         Sound = new Audio('assets/images/rubee1.mp3'); 
         Sound.play();
@@ -101,13 +91,9 @@ $(document).ready(function(){
       $('#finalScore').text(totalScoreNumber); 
         if (totalScoreNumber == Random){
             yay();
-            SoundWin = new Audio('assets/images/win1.mp3'); 
-            SoundWin.play();
         }
         else if (totalScoreNumber > Random){
             loser();
-            SoundLose = new Audio('assets/images/lose1.mp3'); 
-            SoundLose.play();
         }   
         Sound = new Audio('assets/images/rubee1.mp3'); 
         Sound.play();
