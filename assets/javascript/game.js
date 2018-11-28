@@ -27,6 +27,7 @@ $(document).ready(function(){
     }
          
     function yay(){
+        
         alert("You Win")
         winsNumber++; 
         $('#numberWins').text(winsNumber);
@@ -47,6 +48,7 @@ $(document).ready(function(){
 
         if (totalScoreNumber == Random){
           yay();
+        //   $('#numberWins').text('You Win!')
           SoundWin = new Audio('assets/images/win1.mp3'); 
           SoundWin.play();
         }
