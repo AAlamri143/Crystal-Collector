@@ -4,9 +4,9 @@ Crystal-Collector-Game is a Javascript app that uses the Math.floor(Math.random(
 
 URL: [https://aalamri143.github.io/Crystal-Collector/](https://aalamri143.github.io/Crystal-Collector/)
 
-#Technologies
+# Technologies
 
-Math.floor()
-Math.random()
-Bootstrap
-Google Fonts
+* Math.floor()
+* Math.random()
+* Bootstrap
+* Google Fonts
